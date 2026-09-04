@@ -125,6 +125,13 @@ h1 { margin-top: 22px; font-size: clamp(3.25rem, 7vw, 6.5rem); max-width: 800px;
 .contact-links span { color:var(--muted); font-size:.62rem; letter-spacing:.13em; }
 .contact-links strong { font-size:.9rem; overflow-wrap:anywhere; }
 .contact-links b { color:var(--accent); }
+.linkedin-link { grid-template-columns:42px 1fr auto !important; transition:border-color .25s ease, background .25s ease, transform .25s ease; }
+.linkedin-link:hover { border-color:var(--accent); background:rgba(100, 229, 193, .06); transform:translateY(-2px); }
+.linkedin-icon { display:grid; place-items:center; width:34px; height:34px; border:1px solid rgba(100, 229, 193, .45); border-radius:9px; color:var(--accent); background:rgba(100, 229, 193, .08); }
+.linkedin-icon svg { width:18px; height:18px; fill:currentColor; }
+.linkedin-copy { display:flex; flex-direction:column; gap:4px; min-width:0; color:var(--text) !important; font-size:inherit !important; letter-spacing:normal !important; }
+.linkedin-copy small { color:var(--muted); font-size:.62rem; letter-spacing:.13em; }
+.linkedin-copy strong { color:var(--text); }
 .contact-note { grid-template-columns: 1fr; }
 .contact-note small { color:var(--muted); font-size:.72rem; }
 .footer { display:flex; justify-content:space-between; align-items:center; gap:15px; padding:30px 0 45px; color:var(--muted); font-size:.76rem; border-top:1px solid var(--line); margin-top:70px; }
